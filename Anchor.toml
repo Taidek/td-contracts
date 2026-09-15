@@ -1,0 +1,21 @@
+[toolchain]
+package_manager = "yarn"
+
+[features]
+resolution = true
+skip-lint = false
+
+[programs.localnet]
+td_core = "DUcAYbrKZw5wgatRwx1zEpz4fzRbp4JM5HJJkcT7wXmc"
+td_config = ""
+td_tournaments = ""
+td_judges = ""
+
+[provider]
+cluster = "localnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "cargo test"
+
+[hooks]
